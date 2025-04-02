@@ -1,25 +1,28 @@
+package Sorting;
+
 import java.util.*;
-public class bubbleSort {
+public class insertionSort {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int arr[]=new int[n];
+        int arr[] = new int[n];
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
         }
-        for(int i=0;i<n-1;i++)
+        sc.close();
+        for(int i=1;i<n;i++)
         {
-            for(int j=0;j<n-i-1;j++)
+            int key = arr[i];
+            int j = i-1;
+            while(j >= 0 && arr[j] > key)
             {
-                if(arr[j]>arr[j+1])
-                {
-                    int temp=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=temp;
-                }
-            }
+                arr[j+1] = arr[j];
+                j--;
+            } 
+            arr[j+1] = key;
         }
+
         for(int i=0;i<n;i++)
         {
             System.out.print(arr[i]+" ");
