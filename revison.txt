@@ -1,0 +1,31 @@
+
+**Collection FrameWork**
+ -Collection is Classes . Not an Array
+ -Don't apply [] in Collections
+
+
+
+ Collection Types:
+    List 
+        1.Array List
+        2.Linked List
+        3.Vector
+        4.Stack
+    Queue
+        1.Priority Queue
+    -Deque
+        1.Array Deque
+
+    Set
+        1.Hash set
+        2.Linked Hash set
+    -Sorted Set
+        1.TreeSet
+
+
+
+
+
+
+
+        
