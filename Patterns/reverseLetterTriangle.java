@@ -1,13 +1,14 @@
 package Patterns;
 import java.util.*;
-public class InvertrightNumPyramid {
+
+public class reverseLetterTriangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.close();
-        for(int i=n;i>0;i--)
+        for(char i = (char) ('A'+n-1); i >= 'A'; i--)
         {
-            for(int j=1;j<=i;j++)
+            for(char j = 'A'; j <= i; j++)
             {
                 System.out.print(j+" ");
             }
